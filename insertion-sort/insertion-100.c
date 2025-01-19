@@ -27,22 +27,17 @@ void insertion(int array[], int tamanho) {
 }
 
 int main() {
+    
     int len = 100;
     int array[len];
     double s, dif;
     input(array, len);
-
-    for (int i = 0; i < 4; i++) {
-        clock_t init = clock();
-        insertion(array, len);
-        clock_t end = clock();
-        dif = (double)(end-init) / CLOCKS_PER_SEC;
-        printf("Exec em segundos = %lf\n", dif);
-        s = s + dif;
-    }
-
-    s = s / 4;
-    printf("Média = %lf", s); // média = 0.000003 (array de 100 números inteiros)
+    clock_t init = clock();
+    insertion(array, len);
+    clock_t end = clock();
+    dif = (double)(end-init) / CLOCKS_PER_SEC;
+    printf("Exec em segundos = %lf\n", dif);
+    s = s + dif;
 
     return 0;
 }

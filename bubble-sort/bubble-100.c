@@ -41,16 +41,11 @@ int main() {
     int array[len];
     double s, dif;
     input(array, len);
-    for (int i = 0; i < 4; i++) {
-        clock_t init = clock();
-        bubble(array, len);
-        clock_t end = clock();
-        dif = (double)(end-init) / CLOCKS_PER_SEC;
-        printf("Exec em segundos = %lf\n", dif);  
-        s = s + dif;
-    }
-    s = s / 4;
-    printf("Média = %lf", s); // média = 0.000029 (array de 100 números)
+    clock_t init = clock();
+    bubble(array, len);
+    clock_t end = clock();
+    dif = (double)(end-init) / CLOCKS_PER_SEC;
+    printf("Exec em segundos = %lf\n", dif);  
 
     return 0;
 }
