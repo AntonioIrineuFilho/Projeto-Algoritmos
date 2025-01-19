@@ -3,31 +3,26 @@
 #include <time.h>
 
 void input(int array[], int tamanho) {
-    FILE *arquivo;
     int n;
+    FILE *arquivo;
     arquivo = fopen("random-nums/input4.txt", "r");
-    for (int i = 0; i < 1000; i++) {
+    for (int i = 0; i < tamanho; i++) {
         fscanf(arquivo, "%d", &n);
         array[i] = n;
     }
     fclose(arquivo);
 }
 
-void troca(int *x, int *y) {
-    int n = *x;
-    *x = *y;
-    *y = n;
-}
 
-void bubble(int array[], int tamanho) {
+void insertion(int array[], int tamanho) {
     for (int i = 0; i < tamanho; i++) {
-        if (i == tamanho - 1) { break; }
-        for (int j = 0; j < tamanho; j++) {
-            if (j == tamanho - 1) { break; }
-            if (array[j] > array[j+1]) {
-                troca(&array[j], &array[j+1]);
-            }
+        int atual = array[i];
+        int j = i - 1;
+        while (j >= 0 && array[j] > atual) {
+            array[j + 1] = array[j];
+            j = j - 1;
         }
+        array[j + 1] = atual;
     }
 }
 
@@ -36,15 +31,18 @@ int main() {
     int array[len];
     double s, dif;
     input(array, len);
+
     for (int i = 0; i < 4; i++) {
         clock_t init = clock();
-        bubble(array, len);
+        insertion(array, len);
         clock_t end = clock();
         dif = (double)(end-init) / CLOCKS_PER_SEC;
         printf("Exec em segundos = %lf\n", dif);
         s = s + dif;
     }
+
     s = s / 4;
-    printf("Média = %lf\n", s); // média de 19.09 segundos (array de 100.000 números)
+    printf("Média = %lf", s); // média = 1.149843 (array de 10.000 números inteiros)
+
     return 0;
 }
