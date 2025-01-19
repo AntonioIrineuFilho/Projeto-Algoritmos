@@ -1,0 +1,43 @@
+// TEMPOS DE EXECUÇÃO BUBBLE SORT
+
+tempos de execução, em segundos, com 100 números inteiros(4 testes):
+
+0.000032
+0.000032
+0.000033
+0.000032
+
+média = 0.000032225
+
+tempos de execução, em segundos, com 1.000 números inteiros(4 testes):
+
+0.002844
+0.002569
+0.002575
+0.002595
+
+média = 0.00264575
+
+tempos de execução, em segundos, com 10.000 números inteiros(4 testes):
+
+0.309598
+0.312201
+0.297349
+0.292276
+
+média = 0.302856
+
+tempos de execução, em segundos, com 100.000 números inteiros(4 testes):
+
+37.363814
+37.762917
+37.669275
+37.366776
+
+média = 37.5406955
+
+tempos de execução, em segundos, com 1.000.000 números inteiros(4 testes):
+
+
+
+média = 
