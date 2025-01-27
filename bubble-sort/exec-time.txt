@@ -38,6 +38,6 @@ média = 37.5406955
 
 tempos de execução, em segundos, com 1.000.000 números inteiros(4 testes):
 
-
+3806.859645(aproximadamente 63,45 minutos)
 
 média = 
