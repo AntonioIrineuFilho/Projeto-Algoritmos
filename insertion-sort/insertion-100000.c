@@ -30,14 +30,13 @@ int main() {
     
     int len = 100000;
     int array[len];
-    double s, dif;
+    double dif;
     input(array, len);
     clock_t init = clock();
     insertion(array, len);
     clock_t end = clock();
     dif = (double)(end-init) / CLOCKS_PER_SEC;
     printf("Exec em segundos = %lf\n", dif);
-    s = s + dif;
 
     return 0;
 }

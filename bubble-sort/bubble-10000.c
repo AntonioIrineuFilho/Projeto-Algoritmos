@@ -39,7 +39,7 @@ int main() {
 
     int len = 10000;
     int array[len];
-    double s, dif;
+    double dif;
     input(array, len);
     clock_t init = clock();
     bubble(array, len);
