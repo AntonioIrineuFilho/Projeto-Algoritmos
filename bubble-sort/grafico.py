@@ -1,5 +1,3 @@
-import matplotlib
-matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from scipy.interpolate import make_interp_spline  # Para suavização
 import numpy as np
@@ -21,8 +19,8 @@ y_suave = spline(x_novo)
 plt.figure(figsize=(8, 5))
 plt.plot(x_novo, y_suave, label="Tempo de execução", color="blue")
 plt.scatter(entradas, tempos, color="red", label="Pontos originais")  # Mostrar os pontos reais
-plt.xscale("linear")  # Escala logarítmica para o eixo X
-plt.yscale("linear")  # Escala logarítmica para o eixo Y
+plt.xscale("log")  # Escala logarítmica para o eixo X
+plt.yscale("linear")
 plt.title("Tempos de execução vs Tamanho de entrada - Bubble Sort", fontsize=14)
 plt.xlabel("Tamanho da entrada (n)", fontsize=12)
 plt.ylabel("Tempo de execução (s)", fontsize=12)
