@@ -18,7 +18,7 @@ y_suave = spline(x_novo)
 # Criar o gráfico
 plt.figure(figsize=(8, 5))
 plt.plot(x_novo, y_suave, label="Tempo de execução", color="blue")
-plt.scatter(entradas, tempos, color="red", label="Pontos originais")  # Mostrar os pontos reais
+plt.scatter(entradas, tempos, color="red", label="Tamanho da entrada")  # Mostrar os pontos reais
 plt.xscale("log")  # Escala logarítmica para o eixo X
 plt.yscale("linear")  # Escala logarítmica para o eixo Y
 plt.title("Tempos de execução vs Tamanho de entrada - Insertion Sort", fontsize=14)
