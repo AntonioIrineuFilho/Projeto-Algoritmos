@@ -1,0 +1,46 @@
+// TEMPOS DE EXECUÇÃO SELECTION SORT
+
+tempos de execução, em segundos, com 100 números inteiros(4 testes):
+
+0.000012
+0.000012
+0.000013
+0.000012
+
+média = 0.000012
+
+tempos de execução, em segundos, com 1.000 números inteiros(4 testes):
+
+0.000643
+0.000739
+0.000642
+0.000677
+
+média = 0.000675
+
+tempos de execução, em segundos, com 10.000 números inteiros(4 testes):
+
+0.060984
+0.060744
+0.069545
+0.060238
+
+média = 0.062878
+
+tempos de execução, em segundos, com 100.000 números inteiros(4 testes):
+
+6.126311
+6.299621
+6.240194
+6.354885
+
+média = 4.613546
+
+tempos de execução, em segundos, com 1.000.000 números inteiros(4 testes):
+
+464.191538(aproximadamente 7 minutos e 44 segundos)
+464.536676(aproximadamente 7 minutos e 44,53 segundos)
+464.718052(aproximadamente 7 minutos e 44,72 segundos)
+464.116746(aproximadamente 7 minutos e 44,12 segundos)
+
+média = 464.393(7 minutos e 44,39 segundos)

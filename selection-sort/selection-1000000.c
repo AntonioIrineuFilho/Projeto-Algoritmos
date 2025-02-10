@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <time.h>
 
-#define LEN 100
+#define LEN 1000000
 
 void input(int array[]) {
     int n;
     FILE *arquivo;
-    arquivo = fopen("random-nums/input1.txt", "r");
+    arquivo = fopen("random-nums/input5.txt", "r");
     for (int i = 0; i < LEN; i++) {
         fscanf(arquivo, "%d", &n);
         array[i] = n;
