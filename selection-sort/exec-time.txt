@@ -38,9 +38,9 @@ média = 4.613546
 
 tempos de execução, em segundos, com 1.000.000 números inteiros(4 testes):
 
-464.191538(aproximadamente 7 minutos e 44 segundos)
-464.536676(aproximadamente 7 minutos e 44,53 segundos)
-464.718052(aproximadamente 7 minutos e 44,72 segundos)
-464.116746(aproximadamente 7 minutos e 44,12 segundos)
+619.898165
+619.248410
+618.387871
+617.605268
 
-média = 464.393(7 minutos e 44,39 segundos)
+média = 618.78
