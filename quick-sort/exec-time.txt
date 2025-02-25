@@ -1,0 +1,46 @@
+// TEMPOS DE EXECUÇÃO QUICK SORT
+
+tempos de execução, em segundos, com 100 números inteiros(4 testes):
+
+0.000007
+0.000006
+0.000007
+0.000006
+
+média = 0.0000065
+
+tempos de execução, em segundos, com 1.000 números inteiros(4 testes):
+
+0.000073
+0.000073
+0.000074
+0.000073
+
+média = 0.000073
+
+tempos de execução, em segundos, com 10.000 números inteiros(4 testes):
+
+0.000946
+0.000946
+0.000947
+0.000950
+
+média = 0.000947
+
+tempos de execução, em segundos, com 100.000 números inteiros(4 testes):
+
+0.011454
+0.011524
+0.011434
+0.011471
+
+média = 0.0114708
+
+tempos de execução, em segundos, com 1.000.000 números inteiros(4 testes):
+
+0.138144
+0.146616
+0.164916
+0.137800
+
+média = 0.146869

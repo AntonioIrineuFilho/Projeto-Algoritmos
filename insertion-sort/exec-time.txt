@@ -7,7 +7,7 @@ tempos de execução, em segundos, com 100 números inteiros(4 testes):
 0.000007
 0.000007
 
-média = 0.000027
+média = 0.00000675
 
 tempos de execução, em segundos, com 1.000 números inteiros(4 testes):
 

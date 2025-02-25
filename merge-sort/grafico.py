@@ -3,7 +3,7 @@ import numpy as np
 from scipy.interpolate import PchipInterpolator
 
 entradas = [100, 1000, 10000, 100000, 1000000]
-tempos = [0.0002, 0.0023, 0.006, 0.045, 0.29]
+tempos = [0.000011, 0.000142, 0.001710, 0.016928, 0.203168]
 
 entradas = np.array(entradas)
 tempos = np.array(tempos)
@@ -15,7 +15,7 @@ y_suave = interpolador(x_novo)
 
 # Criar o gráfico
 plt.figure(figsize=(8, 5))
-plt.plot(x_novo, y_suave, label="Tempo de execução (Curva Suavizada)", color="blue")
+plt.plot(x_novo, y_suave, label="Tempo de execução", color="blue")
 plt.scatter(entradas, tempos, color="red", label="Tamanho de entrada")
 plt.xscale("log")
 plt.yscale("linear")

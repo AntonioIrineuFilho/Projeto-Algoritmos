@@ -4,7 +4,7 @@ import numpy as np
 
 # Medir tempos de execução para diferentes tamanhos de entrada
 entradas = [100, 1000, 10000, 100000, 1000000]
-tempos = [0.000027, 0.000445, 0.0454315, 4.613546, 464.393]
+tempos = [0.00000675, 0.000445, 0.0454315, 4.613546, 464.393]
 
 # Converter para numpy arrays para manipulação
 entradas = np.array(entradas)
